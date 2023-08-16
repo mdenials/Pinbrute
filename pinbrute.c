@@ -12,7 +12,7 @@ int end = 0;
 
 for (i=1; i < argc; i++) {
 if (strcmp((const char*) argv[i], "-b") == 0) {
-  b_flag=1
+  b_flag=1;
   start = atoi(argv[i+1]);
   end = atoi(argv[i+2]);
   break;
@@ -24,9 +24,10 @@ printf("This is a sample program.\n");
 if (b_flag == 1) {
   for (i= start; i <= end; i++) {
     char command[100];
-    sprintf(command, "adb shell locksettings clear --old $i", i);
+    sprintf(command, "adb shell locksettings clear %04d", i);
     system(command);
   }
 }
   return 0;
 }
+
