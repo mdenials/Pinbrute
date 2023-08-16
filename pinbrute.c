@@ -24,7 +24,7 @@ printf("This is a sample program.\n");
 if (b_flag == 1) {
   for (i= start; i <= end; i++) {
     char command[100];
-    sprintf(command, "adb shell locksettings clear %04d", i);
+    sprintf(command, "adb shell locksettings clear --old %04d", i);
     system(command);
   }
 }
