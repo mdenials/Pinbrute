@@ -18,8 +18,8 @@ if (strcmp((const char*) argv[i], "-b") == 0) {
   break;
 }
 }
-if (b_flag == 0 && argc > 1 && strcmp(argv[1], "-v") == 0) {
-printf("Crack 4 digits android pin code\n");
+if (b_flag == 0 && argc > 1 && strcmp(argv[1], "-h") == 0) {
+printf("Usage: pinbrute -b min max\n");
 }
 if (b_flag == 1) {
   for (i= start; i <= end; i++) {
