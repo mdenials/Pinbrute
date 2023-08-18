@@ -19,7 +19,7 @@ if (strcmp((const char*) argv[i], "-b") == 0) {
 }
 }
 if (b_flag == 0 && argc > 1 && strcmp(argv[1], "-v") == 0) {
-printf("Crack 4 digits androif pin code.\n");
+printf("Crack 4 digits android pin code.\n");
 }
 if (b_flag == 1) {
   for (i= start; i <= end; i++) {
